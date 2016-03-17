@@ -4,11 +4,9 @@
         "emitEntryPoint": false
     },
     "dependencies": {
-        "NETStandard.Library": "1.5.0-rc3-23911",
-        "System.Reflection": "4.1.0-rc3-23911",
-        "System.Diagnostics.TraceSource": "4.0.0-rc3-23911",
-        "System.Diagnostics.TextWriterTraceListener": "4.0.0-rc3-23911",
-        "System.Text.Encoding": "4.0.11-rc3-23911"
+        "NETStandard.Library": "1.5.0-rc3-23916",
+        "System.Diagnostics.TraceSource": "4.0.0-rc3-23910",
+        "System.Diagnostics.TextWriterTraceListener": "4.0.0-rc3-23910"
     },
     "frameworks": {
         "dnxcore50": {
