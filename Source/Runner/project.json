@@ -4,7 +4,9 @@
         "emitEntryPoint": true
     },
     "dependencies": {
-        "NETStandard.Library": "1.5.0-rc3-23916"
+        "NETStandard.App": "1.5.0-rc3-23916",
+        "Machine.Specifications.Core": "1.0.0-*",
+        "Machine.Specifications.Should.Core": "1.0.0-*"
     },
     "frameworks": {
         "dnxcore50": {

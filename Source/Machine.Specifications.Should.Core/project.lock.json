@@ -49,15 +49,6 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "NETStandard.App/1.5.0-rc3-23916": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.DotNet.CoreHost": "0.0.1-beta-00001",
-          "Microsoft.NETCore.Platforms": "1.0.1-rc3-23916",
-          "Microsoft.NETCore.Runtime": "1.0.2-rc3-23916",
-          "NETStandard.Library": "1.5.0-rc3-23916"
-        }
-      },
       "NETStandard.Library/1.5.0-rc3-23916": {
         "type": "package",
         "dependencies": {
@@ -974,15 +965,6 @@
           "System.Diagnostics.TextWriterTraceListener": "4.0.0-rc3-23910",
           "System.Diagnostics.TraceSource": "4.0.0-rc3-23910"
         }
-      },
-      "Machine.Specifications.Should.Core/1.0.0": {
-        "type": "project",
-        "framework": "DNXCore,Version=v5.0",
-        "dependencies": {
-          "Machine.Specifications.Core": "1.0.0",
-          "NETStandard.Library": "1.5.0-rc3-23916",
-          "System.Linq.Expressions": "4.0.11-rc3-23910"
-        }
       }
     },
     "DNXCore,Version=v5.0/osx.10.11-x64": {
@@ -1035,15 +1017,6 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "NETStandard.App/1.5.0-rc3-23916": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.DotNet.CoreHost": "0.0.1-beta-00001",
-          "Microsoft.NETCore.Platforms": "1.0.1-rc3-23916",
-          "Microsoft.NETCore.Runtime": "1.0.2-rc3-23916",
-          "NETStandard.Library": "1.5.0-rc3-23916"
         }
       },
       "NETStandard.Library/1.5.0-rc3-23916": {
@@ -2509,15 +2482,6 @@
           "System.Diagnostics.TextWriterTraceListener": "4.0.0-rc3-23910",
           "System.Diagnostics.TraceSource": "4.0.0-rc3-23910"
         }
-      },
-      "Machine.Specifications.Should.Core/1.0.0": {
-        "type": "project",
-        "framework": "DNXCore,Version=v5.0",
-        "dependencies": {
-          "Machine.Specifications.Core": "1.0.0",
-          "NETStandard.Library": "1.5.0-rc3-23916",
-          "System.Linq.Expressions": "4.0.11-rc3-23910"
-        }
       }
     }
   },
@@ -2526,7 +2490,6 @@
       "sha512": "8B1JNAz0dQPltBIonw8TTE16OeY+iUVw1bFLJlZ70zX3hf+18tyKiQmJK1adOTObxJ6uFEz18Mxt2Ue5LtgQXQ==",
       "type": "package",
       "files": [
-        "Microsoft.DotNet.CoreHost.0.0.1-beta-00001.nupkg",
         "Microsoft.DotNet.CoreHost.0.0.1-beta-00001.nupkg.sha512",
         "Microsoft.DotNet.CoreHost.nuspec",
         "runtime.json"
@@ -2536,7 +2499,6 @@
       "sha512": "E+Cvonu7NKm0yRwgsJ53asYMbEazk99xMKGF+MQwOwuaAts6iVtIzYTZPieBeeTkzPktHB9K+PDGDxpjKrv9mg==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Platforms.1.0.1-rc3-23916.nupkg",
         "Microsoft.NETCore.Platforms.1.0.1-rc3-23916.nupkg.sha512",
         "Microsoft.NETCore.Platforms.nuspec",
         "ThirdPartyNotices.txt",
@@ -2548,7 +2510,6 @@
       "sha512": "CkWTzX6aVPMCy4JOrHRAlpmw8hA1op1bTIAL99Wt1tIz2Jb2vwhG3ZadRJkqSQEBxSk3Tp83aXvsIaguEIUFlw==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Runtime.1.0.2-rc3-23916.nupkg",
         "Microsoft.NETCore.Runtime.1.0.2-rc3-23916.nupkg.sha512",
         "Microsoft.NETCore.Runtime.nuspec",
         "ThirdPartyNotices.txt",
@@ -2559,7 +2520,6 @@
       "sha512": "GZ+vMM/sZr1BtH6+KvfxppfafhuRPkgEogdETSoOluQpVTXK+ICac4838be+d5fTkVGxC9OAjz+vALMu8etWSw==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Runtime.CoreCLR.1.0.2-rc3-23916.nupkg",
         "Microsoft.NETCore.Runtime.CoreCLR.1.0.2-rc3-23916.nupkg.sha512",
         "Microsoft.NETCore.Runtime.CoreCLR.nuspec",
         "ThirdPartyNotices.txt",
@@ -2571,7 +2531,6 @@
       "sha512": "Tw/yqJ8SIIcOJpwNow7geqzqJANm/MsRnjmQ5hprQZCY8XWWkFV8ahUTiKbL2Qcg1tQfvgs6N0DtLhXK9dnBkg==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Runtime.Native.1.0.2-rc3-23916.nupkg",
         "Microsoft.NETCore.Runtime.Native.1.0.2-rc3-23916.nupkg.sha512",
         "Microsoft.NETCore.Runtime.Native.nuspec",
         "ThirdPartyNotices.txt",
@@ -2582,7 +2541,6 @@
       "sha512": "RQL/UxyZodsV7QlWRrdwTcwN9WTNbrP6bynQeBWrSUkGKO7tymTK0F8EeKGvOeCqisX6sC7hgRSQRfS15NU2jg==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Targets.1.0.1-rc3-23916.nupkg",
         "Microsoft.NETCore.Targets.1.0.1-rc3-23916.nupkg.sha512",
         "Microsoft.NETCore.Targets.nuspec",
         "ThirdPartyNotices.txt",
@@ -2594,7 +2552,6 @@
       "sha512": "/JBscK8R4+zmUGYCnMs/Q7FxqBCTYjuDsl+rwAGK11vtW+nG0KhIe2S4t6J50KP4IQf41iJ9j4u+ngvSsyFvvg==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Targets.DNXCore.5.0.0-rc3-23916.nupkg",
         "Microsoft.NETCore.Targets.DNXCore.5.0.0-rc3-23916.nupkg.sha512",
         "Microsoft.NETCore.Targets.DNXCore.nuspec",
         "ThirdPartyNotices.txt",
@@ -2606,7 +2563,6 @@
       "sha512": "VSxLuCnWTEKLdKL9FkQct6cR/qavKs0KrqDLrGTLppPVVE4F3ReCQXx1SdZl30kSO2/k7s+EkL+AM6mPm2Wz+g==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Windows.ApiSets.1.0.1-rc3-23916.nupkg",
         "Microsoft.NETCore.Windows.ApiSets.1.0.1-rc3-23916.nupkg.sha512",
         "Microsoft.NETCore.Windows.ApiSets.nuspec",
         "ThirdPartyNotices.txt",
@@ -2618,7 +2574,6 @@
       "sha512": "st3AsUCL3hjgAWezjEeMbwgP1gmDAnsIxL28UgmmHHysXyjU0CMnWUlfZkPDFLIWJu9RlQt7yaBRuau4gualAg==",
       "type": "package",
       "files": [
-        "Microsoft.Win32.Primitives.4.0.1-rc3-23916.nupkg",
         "Microsoft.Win32.Primitives.4.0.1-rc3-23916.nupkg.sha512",
         "Microsoft.Win32.Primitives.nuspec",
         "ThirdPartyNotices.txt",
@@ -2650,21 +2605,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "NETStandard.App/1.5.0-rc3-23916": {
-      "sha512": "NfZuep+J2T6Q04OF7SRbfEWqG5DYFuTk5WHEzBKkiPomc1CsSpe3QPx/I2hXKSZwDa5+FKGe0VeOkuPtXlTVPQ==",
-      "type": "package",
-      "files": [
-        "NETStandard.App.1.5.0-rc3-23916.nupkg.sha512",
-        "NETStandard.App.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt"
-      ]
-    },
     "NETStandard.Library/1.5.0-rc3-23916": {
       "sha512": "PIRTXni1w38MzSJc+fkITpXoRtXXdgicBdgUGDBVKbjtoZb15svUuDUf6n1jJnlE6uQdLWugHe9vbGMRn1d5Zg==",
       "type": "package",
       "files": [
-        "NETStandard.Library.1.5.0-rc3-23916.nupkg",
         "NETStandard.Library.1.5.0-rc3-23916.nupkg.sha512",
         "NETStandard.Library.nuspec",
         "ThirdPartyNotices.txt",
@@ -2687,7 +2631,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.AppContext.4.1.0-rc3-23916.nupkg",
         "runtime.any.System.AppContext.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.AppContext.nuspec"
       ]
@@ -2711,7 +2654,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Collections.4.0.10-rc3-23916.nupkg",
         "runtime.any.System.Collections.4.0.10-rc3-23916.nupkg.sha512",
         "runtime.any.System.Collections.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2736,7 +2678,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Diagnostics.Tools.4.0.0-rc3-23916.nupkg",
         "runtime.any.System.Diagnostics.Tools.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Diagnostics.Tools.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2761,7 +2702,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Diagnostics.Tracing.4.1.0-rc3-23916.nupkg",
         "runtime.any.System.Diagnostics.Tracing.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Diagnostics.Tracing.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2786,7 +2726,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Globalization.4.0.10-rc3-23916.nupkg",
         "runtime.any.System.Globalization.4.0.10-rc3-23916.nupkg.sha512",
         "runtime.any.System.Globalization.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2808,7 +2747,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Globalization.Calendars.4.0.1-rc3-23916.nupkg",
         "runtime.any.System.Globalization.Calendars.4.0.1-rc3-23916.nupkg.sha512",
         "runtime.any.System.Globalization.Calendars.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2833,7 +2771,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.IO.4.1.0-rc3-23916.nupkg",
         "runtime.any.System.IO.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.IO.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2858,7 +2795,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Reflection.4.1.0-rc3-23916.nupkg",
         "runtime.any.System.Reflection.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Reflection.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2883,7 +2819,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Reflection.Extensions.4.0.0-rc3-23916.nupkg",
         "runtime.any.System.Reflection.Extensions.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Reflection.Extensions.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2908,7 +2843,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Reflection.Primitives.4.0.0-rc3-23916.nupkg",
         "runtime.any.System.Reflection.Primitives.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Reflection.Primitives.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2954,7 +2888,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Resources.ResourceManager.4.0.0-rc3-23916.nupkg",
         "runtime.any.System.Resources.ResourceManager.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Resources.ResourceManager.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -2979,7 +2912,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Runtime.4.1.0-rc3-23916.nupkg",
         "runtime.any.System.Runtime.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Runtime.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -3000,7 +2932,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Runtime.Handles.4.0.0-rc3-23916.nupkg",
         "runtime.any.System.Runtime.Handles.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Runtime.Handles.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -3024,7 +2955,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Runtime.InteropServices.4.1.0-rc3-23916.nupkg",
         "runtime.any.System.Runtime.InteropServices.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Runtime.InteropServices.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -3048,7 +2978,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Text.Encoding.4.0.10-rc3-23916.nupkg",
         "runtime.any.System.Text.Encoding.4.0.10-rc3-23916.nupkg.sha512",
         "runtime.any.System.Text.Encoding.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -3072,7 +3001,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Text.Encoding.Extensions.4.0.10-rc3-23916.nupkg",
         "runtime.any.System.Text.Encoding.Extensions.4.0.10-rc3-23916.nupkg.sha512",
         "runtime.any.System.Text.Encoding.Extensions.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -3097,7 +3025,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Threading.Tasks.4.0.10-rc3-23916.nupkg",
         "runtime.any.System.Threading.Tasks.4.0.10-rc3-23916.nupkg.sha512",
         "runtime.any.System.Threading.Tasks.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -3121,7 +3048,6 @@
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/netstandard/_._",
-        "runtime.any.System.Threading.Timer.4.0.0-rc3-23916.nupkg",
         "runtime.any.System.Threading.Timer.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.any.System.Threading.Timer.nuspec",
         "runtimes/aot/lib/netcore50/_._"
@@ -3171,7 +3097,6 @@
       "sha512": "FqqDMSwnWlajPH/xLwCPgxEm3pqhMiAjnlyOzt54TmceUrqDbE9i3GWKdn9sjd/Fl6SAMLacwhgDgsd3S7E+Tw==",
       "type": "package",
       "files": [
-        "runtime.osx.10.10-x64.Microsoft.DotNet.CoreHost.0.0.1-beta-00001.nupkg",
         "runtime.osx.10.10-x64.Microsoft.DotNet.CoreHost.0.0.1-beta-00001.nupkg.sha512",
         "runtime.osx.10.10-x64.Microsoft.DotNet.CoreHost.nuspec",
         "runtimes/osx.10.10-x64/native/corehost",
@@ -3185,7 +3110,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/dotnet/_._",
-        "runtime.osx.10.10-x64.Microsoft.NETCore.Runtime.CoreCLR.1.0.2-rc3-23916.nupkg",
         "runtime.osx.10.10-x64.Microsoft.NETCore.Runtime.CoreCLR.1.0.2-rc3-23916.nupkg.sha512",
         "runtime.osx.10.10-x64.Microsoft.NETCore.Runtime.CoreCLR.nuspec",
         "runtimes/osx.10.10-x64/lib/dotnet/mscorlib.dll",
@@ -3252,7 +3176,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.Microsoft.Win32.Primitives.4.0.1-rc3-23916.nupkg",
         "runtime.unix.Microsoft.Win32.Primitives.4.0.1-rc3-23916.nupkg.sha512",
         "runtime.unix.Microsoft.Win32.Primitives.nuspec",
         "runtimes/unix/lib/netstandard1.3/Microsoft.Win32.Primitives.dll"
@@ -3265,7 +3188,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.Console.4.0.0-rc3-23916.nupkg",
         "runtime.unix.System.Console.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.unix.System.Console.nuspec",
         "runtimes/unix/lib/netstandard1.3/System.Console.dll"
@@ -3278,7 +3200,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.Diagnostics.Debug.4.0.10-rc3-23916.nupkg",
         "runtime.unix.System.Diagnostics.Debug.4.0.10-rc3-23916.nupkg.sha512",
         "runtime.unix.System.Diagnostics.Debug.nuspec",
         "runtimes/unix/lib/netstandard1.3/System.Diagnostics.Debug.dll"
@@ -3291,7 +3212,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.IO.FileSystem.4.0.1-rc3-23916.nupkg",
         "runtime.unix.System.IO.FileSystem.4.0.1-rc3-23916.nupkg.sha512",
         "runtime.unix.System.IO.FileSystem.nuspec",
         "runtimes/unix/lib/netstandard1.3/System.IO.FileSystem.dll"
@@ -3304,7 +3224,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.Net.Primitives.4.0.10-rc3-23916.nupkg",
         "runtime.unix.System.Net.Primitives.4.0.10-rc3-23916.nupkg.sha512",
         "runtime.unix.System.Net.Primitives.nuspec",
         "runtimes/unix/lib/netstandard1.3/System.Net.Primitives.dll"
@@ -3317,7 +3236,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.Net.Sockets.4.1.0-rc3-23916.nupkg",
         "runtime.unix.System.Net.Sockets.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.unix.System.Net.Sockets.nuspec",
         "runtimes/unix/lib/netstandard1.3/System.Net.Sockets.dll"
@@ -3330,7 +3248,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.Private.Uri.4.0.1-rc3-23916.nupkg",
         "runtime.unix.System.Private.Uri.4.0.1-rc3-23916.nupkg.sha512",
         "runtime.unix.System.Private.Uri.nuspec",
         "runtimes/win7/lib/netstandard1.0/System.Private.Uri.dll"
@@ -3343,7 +3260,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.Runtime.Extensions.4.1.0-rc3-23916.nupkg",
         "runtime.unix.System.Runtime.Extensions.4.1.0-rc3-23916.nupkg.sha512",
         "runtime.unix.System.Runtime.Extensions.nuspec",
         "runtimes/unix/lib/netstandard1.5/System.Runtime.Extensions.dll"
@@ -3356,7 +3272,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.unix.System.Runtime.InteropServices.RuntimeInformation.4.0.0-rc3-23916.nupkg",
         "runtime.unix.System.Runtime.InteropServices.RuntimeInformation.4.0.0-rc3-23916.nupkg.sha512",
         "runtime.unix.System.Runtime.InteropServices.RuntimeInformation.nuspec",
         "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll"
@@ -3366,7 +3281,6 @@
       "sha512": "VKbc0I7PGseVQjPMrKSof1OyBYtm4p3J3yzTJSzxsQ0bccBgKfmaI4/aZqq9tf24fq/gzepUdYjUfeRbzLZDkw==",
       "type": "package",
       "files": [
-        "System.AppContext.4.1.0-rc3-23916.nupkg",
         "System.AppContext.4.1.0-rc3-23916.nupkg.sha512",
         "System.AppContext.nuspec",
         "ThirdPartyNotices.txt",
@@ -3426,7 +3340,6 @@
       "sha512": "kSpExABcyYzh1Y02ixPUfVSK8X8AiGINMOetBrucLhVg7gaUokac9onaCMpS77TcPzECxdaDjqHr+u3+cEdW0g==",
       "type": "package",
       "files": [
-        "System.Collections.4.0.11-rc3-23916.nupkg",
         "System.Collections.4.0.11-rc3-23916.nupkg.sha512",
         "System.Collections.nuspec",
         "ThirdPartyNotices.txt",
@@ -3490,7 +3403,6 @@
       "sha512": "zyKskmvXcsBwJKQtUZAJJqZf5TrC0KqJlfhXRUgQOIgxmL+/42qqVMS4jt/QlK0laFSYU9GDDOpqL7z2S2L0FQ==",
       "type": "package",
       "files": [
-        "System.Collections.Concurrent.4.0.12-rc3-23916.nupkg",
         "System.Collections.Concurrent.4.0.12-rc3-23916.nupkg.sha512",
         "System.Collections.Concurrent.nuspec",
         "ThirdPartyNotices.txt",
@@ -3554,7 +3466,6 @@
       "sha512": "bzNlS7gtHJvCyBzITHdhssOER8OecWeGr8FSdsrJoVOlzxrEViWxhZ+OGdN9UdvHc5o81QD5kT7xVLnnUvVrcw==",
       "type": "package",
       "files": [
-        "System.Console.4.0.0-rc3-23916.nupkg",
         "System.Console.4.0.0-rc3-23916.nupkg.sha512",
         "System.Console.nuspec",
         "ThirdPartyNotices.txt",
@@ -3590,7 +3501,6 @@
       "sha512": "bXa1gl8qWA03BAgy/jYpHRWh37KVWhaJc2I/hbDg2D0Synhyk7Ak00GasZfu7l9YfHdMR3e4oToy/RBr2vlugg==",
       "type": "package",
       "files": [
-        "System.Diagnostics.Debug.4.0.11-rc3-23916.nupkg",
         "System.Diagnostics.Debug.4.0.11-rc3-23916.nupkg.sha512",
         "System.Diagnostics.Debug.nuspec",
         "ThirdPartyNotices.txt",
@@ -3746,7 +3656,6 @@
       "sha512": "lGZmdBlzIYAUKmsgyOFhyrLxs+kz1BNqqVJ8nY6fnmhGMr4jixgUE5ILyiXAFKp6TSBeHYA9DRwnKy4+Juph3w==",
       "type": "package",
       "files": [
-        "System.Diagnostics.Tools.4.0.1-rc3-23916.nupkg",
         "System.Diagnostics.Tools.4.0.1-rc3-23916.nupkg.sha512",
         "System.Diagnostics.Tools.nuspec",
         "ThirdPartyNotices.txt",
@@ -3872,7 +3781,6 @@
       "sha512": "zCQPLUlrRsopYuP60y/VEW56+bYrNLlLfWXn0VDvTvV62e8fdc2M+lBifLBAOQnX54NyQkzJCrftNRfg0lgFPg==",
       "type": "package",
       "files": [
-        "System.Diagnostics.Tracing.4.1.0-rc3-23916.nupkg",
         "System.Diagnostics.Tracing.4.1.0-rc3-23916.nupkg.sha512",
         "System.Diagnostics.Tracing.nuspec",
         "ThirdPartyNotices.txt",
@@ -3958,7 +3866,6 @@
       "sha512": "2mhvV+NV8fVw+eoTo4wd0a+4UlNGv+UaVk8l7BiHO3LqUcfn7Up4l7v8L8x9yYZX3bl1hc24tdXgi7olHNt+VA==",
       "type": "package",
       "files": [
-        "System.Globalization.4.0.11-rc3-23916.nupkg",
         "System.Globalization.4.0.11-rc3-23916.nupkg.sha512",
         "System.Globalization.nuspec",
         "ThirdPartyNotices.txt",
@@ -4022,7 +3929,6 @@
       "sha512": "UduLVArvJfBqTwZWlGvdlG0owodAl2ocS2IxZb7oPxo00MwuKidCEEBJLVYsSXT8Cr2YxDUpK3LneX98RvIYvQ==",
       "type": "package",
       "files": [
-        "System.Globalization.Calendars.4.0.1-rc3-23916.nupkg",
         "System.Globalization.Calendars.4.0.1-rc3-23916.nupkg.sha512",
         "System.Globalization.Calendars.nuspec",
         "ThirdPartyNotices.txt",
@@ -4058,7 +3964,6 @@
       "sha512": "H0qdNiKYFGur8PhqR/gE7kgHzfsTEp1YmHpwTDNzZrDgHJBzhxm+K5Vb2Nl28kaet2tGIy8FxbYsurA6KDrwcw==",
       "type": "package",
       "files": [
-        "System.IO.4.1.0-rc3-23916.nupkg",
         "System.IO.4.1.0-rc3-23916.nupkg.sha512",
         "System.IO.nuspec",
         "ThirdPartyNotices.txt",
@@ -4135,7 +4040,6 @@
       "sha512": "Pi3wVN/DpKbuxsKjU/sxeUKqNW2knd1KlCe7ROQaPZp4mKH7GQUbLOnVIE/RygW+YOt1DN1t7zXditfWallz0w==",
       "type": "package",
       "files": [
-        "System.IO.Compression.4.1.0-rc3-23916.nupkg",
         "System.IO.Compression.4.1.0-rc3-23916.nupkg.sha512",
         "System.IO.Compression.nuspec",
         "ThirdPartyNotices.txt",
@@ -4201,7 +4105,6 @@
       "sha512": "z6/jjc8LOkSQqgh9KyifO5CVPV53cr7AM4BU+mNSCVg82cDNEChklHJKcMkzNIOtpz2tcw/wqh6jpBm9lrpwYQ==",
       "type": "package",
       "files": [
-        "System.IO.Compression.ZipFile.4.0.1-rc3-23916.nupkg",
         "System.IO.Compression.ZipFile.4.0.1-rc3-23916.nupkg.sha512",
         "System.IO.Compression.ZipFile.nuspec",
         "ThirdPartyNotices.txt",
@@ -4238,7 +4141,6 @@
       "sha512": "TnZE9dLLTc4fkLMRw96lDw8p/iiZ89w7UMU2uE2era0nUurLr26uNQbs0IXubk/xWUov1nzwDzXJVwNMPEnw2Q==",
       "type": "package",
       "files": [
-        "System.IO.FileSystem.4.0.1-rc3-23916.nupkg",
         "System.IO.FileSystem.4.0.1-rc3-23916.nupkg.sha512",
         "System.IO.FileSystem.nuspec",
         "ThirdPartyNotices.txt",
@@ -4274,7 +4176,6 @@
       "sha512": "hVZknsTMGmBhUewINb5JQbcu34AAj8KwNcQuc1rX68saZNPsPXroLl9YRe76uimKitjKhfhGnyhWR9LPQKjW6g==",
       "type": "package",
       "files": [
-        "System.IO.FileSystem.Primitives.4.0.1-rc3-23916.nupkg",
         "System.IO.FileSystem.Primitives.4.0.1-rc3-23916.nupkg.sha512",
         "System.IO.FileSystem.Primitives.nuspec",
         "ThirdPartyNotices.txt",
@@ -4350,7 +4251,6 @@
       "sha512": "/ScDmQRKeTpMdpBzDeWjdKKfS4xFo5NWlolYTxTCAYTx7apCOrNFVYbFGmkijwHnVD+Iu96yb+ZoB3YhrnPcoQ==",
       "type": "package",
       "files": [
-        "System.Linq.4.1.0-rc3-23916.nupkg",
         "System.Linq.4.1.0-rc3-23916.nupkg.sha512",
         "System.Linq.nuspec",
         "ThirdPartyNotices.txt",
@@ -4547,7 +4447,6 @@
       "sha512": "u/D2yoB2Kjj22N5WaM1FK0U1QmSTBGMfK2r21HUkQ5MaUcJQX0dYPr3jZ7W5eZ4VQDYykCDWOeagzo6doKyvGw==",
       "type": "package",
       "files": [
-        "System.Net.Http.4.0.1-rc3-23916.nupkg",
         "System.Net.Http.4.0.1-rc3-23916.nupkg.sha512",
         "System.Net.Http.nuspec",
         "ThirdPartyNotices.txt",
@@ -4642,7 +4541,6 @@
       "sha512": "YJX2Yv1zGq+dIciVc1yROC4IFetG8EmWRDm5yiI/OWhNScqhMnNO7RvUFYN4mfzlxKKOPSaz8SlcvNy/SZalVQ==",
       "type": "package",
       "files": [
-        "System.Net.Primitives.4.0.11-rc3-23916.nupkg",
         "System.Net.Primitives.4.0.11-rc3-23916.nupkg.sha512",
         "System.Net.Primitives.nuspec",
         "ThirdPartyNotices.txt",
@@ -4717,7 +4615,6 @@
       "sha512": "Dbx7C1dKlxOFA7ErLu30aHY8OB/IksFUGfFU3Cj9KiIEjHK8pamOwgOuHEUEpoo5zIC0Ju1OlBDkxARNMyVLVA==",
       "type": "package",
       "files": [
-        "System.Net.Sockets.4.1.0-rc3-23916.nupkg",
         "System.Net.Sockets.4.1.0-rc3-23916.nupkg.sha512",
         "System.Net.Sockets.nuspec",
         "ThirdPartyNotices.txt",
@@ -4753,7 +4650,6 @@
       "sha512": "6b/fy7x1U19qe8tyyMkdrzkGzeRIJynrFDhFXH89mhFEY1bpn+Jd4fhoCwuhbBjI1ivhOKlMHMcriAfMuW3gXA==",
       "type": "package",
       "files": [
-        "System.ObjectModel.4.0.12-rc3-23916.nupkg",
         "System.ObjectModel.4.0.12-rc3-23916.nupkg.sha512",
         "System.ObjectModel.nuspec",
         "ThirdPartyNotices.txt",
@@ -4819,7 +4715,6 @@
       "sha512": "lMJ+GDVeXYbrYsyBfJdvxf38QG4VVEXUBsK11ZzgI6g2kpNRSxN7vmb9HMJLZWtGIOjXTSQJiJYoeZc0zYsSGw==",
       "type": "package",
       "files": [
-        "System.Private.Uri.4.0.1-rc3-23916.nupkg",
         "System.Private.Uri.4.0.1-rc3-23916.nupkg.sha512",
         "System.Private.Uri.nuspec",
         "ThirdPartyNotices.txt",
@@ -4831,7 +4726,6 @@
       "sha512": "E8B4Kl8x+y2qQ3HOsYGjmi89X/1xZwxQd0lgJ7P8/1hrNfid1aXfQ9bddAI2qjHxncNE/qp9FqQaJVtJRtQyBA==",
       "type": "package",
       "files": [
-        "System.Reflection.4.1.0-rc3-23916.nupkg",
         "System.Reflection.4.1.0-rc3-23916.nupkg.sha512",
         "System.Reflection.nuspec",
         "ThirdPartyNotices.txt",
@@ -4993,7 +4887,6 @@
       "sha512": "1eF87a6Kts1UQXqhx7dzrndaeTedXAvPPxYWRM3xX1spQHiTyi0h/up/D2i7bzFId5kz/0RzUvQCgcWlPNQeYw==",
       "type": "package",
       "files": [
-        "System.Reflection.Extensions.4.0.1-rc3-23916.nupkg",
         "System.Reflection.Extensions.4.0.1-rc3-23916.nupkg.sha512",
         "System.Reflection.Extensions.nuspec",
         "ThirdPartyNotices.txt",
@@ -5046,7 +4939,6 @@
       "sha512": "jxOJVsG831sg2smBk2OTBFvvyesszhJ31MhUaHbDops/TrtjsX+AC00JVk3Ua4iNfKhSTw2LZNUCgJV3VyZ//w==",
       "type": "package",
       "files": [
-        "System.Reflection.Primitives.4.0.1-rc3-23916.nupkg",
         "System.Reflection.Primitives.4.0.1-rc3-23916.nupkg.sha512",
         "System.Reflection.Primitives.nuspec",
         "ThirdPartyNotices.txt",
@@ -5146,7 +5038,6 @@
       "sha512": "hx37/azr+ZTdOHpHRxrq2DyaIAt8IRhfDy4rEuvm5S1dFnXD+LsCBdq5R9HPbUgoGq+ROHOBmWhSA3xgJ9eZhg==",
       "type": "package",
       "files": [
-        "System.Resources.ResourceManager.4.0.1-rc3-23916.nupkg",
         "System.Resources.ResourceManager.4.0.1-rc3-23916.nupkg.sha512",
         "System.Resources.ResourceManager.nuspec",
         "ThirdPartyNotices.txt",
@@ -5199,7 +5090,6 @@
       "sha512": "Uqvl41030oJkp1fnEaBSo3uJWO0ylZ2bK8dwZE9f18WoNLRrupo52n1V9MLUm9wirIc4W2wmXGE587WN23/YZQ==",
       "type": "package",
       "files": [
-        "System.Runtime.4.1.0-rc3-23916.nupkg",
         "System.Runtime.4.1.0-rc3-23916.nupkg.sha512",
         "System.Runtime.nuspec",
         "ThirdPartyNotices.txt",
@@ -5287,7 +5177,6 @@
       "sha512": "ovoWTQM1D7mdsluypURC76Qf+dkk93s7prwPPMQ6lqUV9MPcCw2vSmnTVHiwYrTEXvXGRTi8jULmOT1GQ1J7Kw==",
       "type": "package",
       "files": [
-        "System.Runtime.Extensions.4.1.0-rc3-23916.nupkg",
         "System.Runtime.Extensions.4.1.0-rc3-23916.nupkg.sha512",
         "System.Runtime.Extensions.nuspec",
         "ThirdPartyNotices.txt",
@@ -5364,7 +5253,6 @@
       "sha512": "4JaatzIi3Da6Ztp61ztkl9CL90gSi+PXcZp7ePDEw8VZtsQOV2Eiay8GPuB9HagIxrpt0eDQ/aoXzDGB4XUtDA==",
       "type": "package",
       "files": [
-        "System.Runtime.Handles.4.0.1-rc3-23916.nupkg",
         "System.Runtime.Handles.4.0.1-rc3-23916.nupkg.sha512",
         "System.Runtime.Handles.nuspec",
         "ThirdPartyNotices.txt",
@@ -5400,7 +5288,6 @@
       "sha512": "LiW7gBkcUi73TYVd5/WhG8iwtY9YqX1/+d5euAzEOnItNVI9RNt7vaM1CdM1bmzYDBa/gbxz9iPy7eK8EDow7Q==",
       "type": "package",
       "files": [
-        "System.Runtime.InteropServices.4.1.0-rc3-23916.nupkg",
         "System.Runtime.InteropServices.4.1.0-rc3-23916.nupkg.sha512",
         "System.Runtime.InteropServices.nuspec",
         "ThirdPartyNotices.txt",
@@ -5509,7 +5396,6 @@
       "sha512": "QM9Hz9p5OqVN7K20/a+4Gi2ntt/tTsW70wnwx6GzdqkGtwJocB02lXV46UWa8ewC2OxMuyNbA/DRmwyDFIAN9Q==",
       "type": "package",
       "files": [
-        "System.Runtime.InteropServices.RuntimeInformation.4.0.0-rc3-23916.nupkg",
         "System.Runtime.InteropServices.RuntimeInformation.4.0.0-rc3-23916.nupkg.sha512",
         "System.Runtime.InteropServices.RuntimeInformation.nuspec",
         "ThirdPartyNotices.txt",
@@ -5533,7 +5419,6 @@
       "sha512": "eyuNsOrV4Hh0dT4flk54S3i+cJjNpQ9FshgTBuq01HiI9kaMZw5oiEYAzACj1/5Xe/d3JU2MG+ZHmD4B/L7jLg==",
       "type": "package",
       "files": [
-        "System.Runtime.Numerics.4.0.1-rc3-23916.nupkg",
         "System.Runtime.Numerics.4.0.1-rc3-23916.nupkg.sha512",
         "System.Runtime.Numerics.nuspec",
         "ThirdPartyNotices.txt",
@@ -5900,7 +5785,6 @@
       "sha512": "mogQS4MWvpb5ONoBahf8Yualn7M2s3usDRFEnxvkIr5PhUDBo/ceut7oLO9Eh8r+ofnsuZRYgxBA5J9rIhE+mw==",
       "type": "package",
       "files": [
-        "System.Text.Encoding.4.0.11-rc3-23916.nupkg",
         "System.Text.Encoding.4.0.11-rc3-23916.nupkg.sha512",
         "System.Text.Encoding.nuspec",
         "ThirdPartyNotices.txt",
@@ -5964,7 +5848,6 @@
       "sha512": "Jq6icrWh9DT/miNmXYUG8X7Lte1Eqx+njo/mFTr5m3w+mE+ABbkeJN88ALIVLh595KXi3knL7jYyQgGd4u72mQ==",
       "type": "package",
       "files": [
-        "System.Text.Encoding.Extensions.4.0.11-rc3-23916.nupkg",
         "System.Text.Encoding.Extensions.4.0.11-rc3-23916.nupkg.sha512",
         "System.Text.Encoding.Extensions.nuspec",
         "ThirdPartyNotices.txt",
@@ -6028,7 +5911,6 @@
       "sha512": "/VUnFUr+NxLUSn9folBz8TKXjym+pV1HQ4TbcGYQjvAaLxj8PT2ecQcOAbGGlHg36FKo5EO/PKjbE9rsHuoWqg==",
       "type": "package",
       "files": [
-        "System.Text.RegularExpressions.4.0.12-rc3-23916.nupkg",
         "System.Text.RegularExpressions.4.0.12-rc3-23916.nupkg.sha512",
         "System.Text.RegularExpressions.nuspec",
         "ThirdPartyNotices.txt",
@@ -6094,7 +5976,6 @@
       "sha512": "p4O1GMA85RiglToL1y9hcOZExdmCUX3VDSO5GMVTRMlQR7VR6BWAOqFawuJtatXtZW10F3wij12KdW109ctBGA==",
       "type": "package",
       "files": [
-        "System.Threading.4.0.11-rc3-23916.nupkg",
         "System.Threading.4.0.11-rc3-23916.nupkg.sha512",
         "System.Threading.nuspec",
         "ThirdPartyNotices.txt",
@@ -6186,7 +6067,6 @@
       "sha512": "2DYviP8IQX7mD+VSjUtdmh8lx6Jmt4l9OOvFQpf5+oLSh+bl2yP9VEEl6h56Zs5xOcnUGWBAofm8TXCVvqvG6Q==",
       "type": "package",
       "files": [
-        "System.Threading.Tasks.4.0.11-rc3-23916.nupkg",
         "System.Threading.Tasks.4.0.11-rc3-23916.nupkg.sha512",
         "System.Threading.Tasks.nuspec",
         "ThirdPartyNotices.txt",
@@ -6338,7 +6218,6 @@
       "sha512": "Cyl6idOxZWIGGX2wMwcyuuMK4EGBHmeQn7TMdg40ZaAJmCW5dPjKxyCwuBn0P/JXI1wsT3VodeNqPpPZTxeDsQ==",
       "type": "package",
       "files": [
-        "System.Threading.Timer.4.0.1-rc3-23916.nupkg",
         "System.Threading.Timer.4.0.1-rc3-23916.nupkg.sha512",
         "System.Threading.Timer.nuspec",
         "ThirdPartyNotices.txt",
@@ -6389,7 +6268,6 @@
       "sha512": "O0SBkhBFDZwZw7WSii0/Xaz+4vJKIlA1tkgWGbQPCC4WmpmTbJw1L0+spttFBA0/8cdwcQKQF8DizqtC5wZFQg==",
       "type": "package",
       "files": [
-        "System.Xml.ReaderWriter.4.0.11-rc3-23916.nupkg",
         "System.Xml.ReaderWriter.4.0.11-rc3-23916.nupkg.sha512",
         "System.Xml.ReaderWriter.nuspec",
         "ThirdPartyNotices.txt",
@@ -6455,7 +6333,6 @@
       "sha512": "TOE4wr8cHJL4PDKMQpyr3r7L7GOjPxNrl/B6W8zdvcrtr+O/HRz3+CDL18h0ytYZHoD6WYcuhrf6+y2NBQM5Fg==",
       "type": "package",
       "files": [
-        "System.Xml.XDocument.4.0.11-rc3-23916.nupkg",
         "System.Xml.XDocument.4.0.11-rc3-23916.nupkg.sha512",
         "System.Xml.XDocument.nuspec",
         "ThirdPartyNotices.txt",
@@ -6520,17 +6397,13 @@
     "Machine.Specifications.Core/1.0.0": {
       "type": "project",
       "path": "../Machine.Specifications.Core/project.json"
-    },
-    "Machine.Specifications.Should.Core/1.0.0": {
-      "type": "project",
-      "path": "../Machine.Specifications.Should.Core/project.json"
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Machine.Specifications.Core >= 1.0.0-*",
-      "Machine.Specifications.Should.Core >= 1.0.0-*",
-      "NETStandard.App >= 1.5.0-rc3-23916"
+      "NETStandard.Library >= 1.5.0-rc3-23916",
+      "System.Linq.Expressions >= 4.0.11-rc3-23910"
     ],
     "DNXCore,Version=v5.0": []
   }

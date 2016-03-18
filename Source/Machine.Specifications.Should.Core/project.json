@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0-*",
+    "compilationOptions": {
+        "emitEntryPoint": false
+    },
+    "dependencies": {
+        "NETStandard.Library": "1.5.0-rc3-23916",
+        "System.Linq.Expressions": "4.0.11-rc3-23910",
+        "Machine.Specifications.Core": "1.0.0-*"
+    },
+    "frameworks": {
+        "dnxcore50": {
+            "dependencies": {
+                
+            }
+        }
+    }
+}
