@@ -290,16 +290,6 @@
         },
         "compile": {
           "ref/netstandard1.3/System.IO.Compression.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win7/lib/netstandard1.3/System.IO.Compression.dll": {
-            "assetType": "runtime",
-            "rid": "win7"
-          }
         }
       },
       "System.IO.Compression.ZipFile/4.0.1-rc3-23916": {
@@ -369,20 +359,6 @@
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
-            "assetType": "runtime",
-            "rid": "linux"
-          },
-          "runtimes/osx/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
-            "assetType": "runtime",
-            "rid": "osx"
-          },
-          "runtimes/win7/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
-            "assetType": "runtime",
-            "rid": "win7"
-          }
         }
       },
       "System.Linq/4.1.0-rc3-23916": {
@@ -434,12 +410,6 @@
         },
         "runtime": {
           "lib/netstandard1.4/System.Net.Http.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win7/lib/netstandard1.3/System.Net.Http.dll": {
-            "assetType": "runtime",
-            "rid": "win7"
-          }
         }
       },
       "System.Net.Primitives/4.0.11-rc3-23916": {
@@ -610,16 +580,6 @@
         },
         "compile": {
           "ref/netstandard1.4/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win7/lib/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {
-            "assetType": "runtime",
-            "rid": "win7"
-          }
         }
       },
       "System.Security.Cryptography.Cng/4.1.0-rc3-23916": {
@@ -637,12 +597,6 @@
         },
         "compile": {
           "ref/netstandard1.4/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.Security.Cryptography.Csp/4.0.0-rc3-23916": {
@@ -663,12 +617,6 @@
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0-rc3-23916": {
@@ -689,16 +637,6 @@
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win7/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
-            "assetType": "runtime",
-            "rid": "win7"
-          }
         }
       },
       "System.Security.Cryptography.OpenSsl/4.0.0-rc3-23916": {
@@ -720,12 +658,6 @@
         },
         "compile": {
           "ref/netstandard1.4/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.4/System.Security.Cryptography.OpenSsl.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          }
         }
       },
       "System.Security.Cryptography.Primitives/4.0.0-rc3-23916": {
@@ -777,16 +709,6 @@
         },
         "compile": {
           "ref/netstandard1.4/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win7/lib/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {
-            "assetType": "runtime",
-            "rid": "win7"
-          }
         }
       },
       "System.Text.Encoding/4.0.11-rc3-23916": {
@@ -846,12 +768,6 @@
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/System.Threading.Overlapped.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.Threading.Tasks/4.0.11-rc3-23916": {
@@ -3566,7 +3482,6 @@
       "sha512": "EaP3NmpdGLBzCA9xR9+NKVB67434GhLXW67H/dfxeHfE7pL/ZUasiA4xiX1YBP7RyU7LyZrKuLfmRhBC0ggCGw==",
       "type": "package",
       "files": [
-        "System.Diagnostics.TraceSource.4.0.0-rc3-23910.nupkg",
         "System.Diagnostics.TraceSource.4.0.0-rc3-23910.nupkg.sha512",
         "System.Diagnostics.TraceSource.nuspec",
         "ThirdPartyNotices.txt",
@@ -3602,7 +3517,6 @@
       "sha512": "ECX5p/i+1AYHdhWjIsW7fA4VYx5bGR91Ht7z6mVDtBRnIC9oDCjxHmmmQkK0d7N6WNN3DSw/EU5yAWWlfbx9fg==",
       "type": "package",
       "files": [
-        "System.Diagnostics.TraceSource.4.0.0-rc3-23916.nupkg",
         "System.Diagnostics.TraceSource.4.0.0-rc3-23916.nupkg.sha512",
         "System.Diagnostics.TraceSource.nuspec",
         "ThirdPartyNotices.txt",
