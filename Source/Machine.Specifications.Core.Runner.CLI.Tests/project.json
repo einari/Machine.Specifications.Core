@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0-*",
+    "version": "0.5.0-*",
     "compilationOptions": {
         "emitEntryPoint": true
     },
@@ -7,7 +7,11 @@
         "NETStandard.App": "1.5.0-rc3-23916",
         "Machine.Specifications.Core": "0.5.0-*",
         "Machine.Specifications.Should.Core": "0.5.0-*",
-        "Machine.Specifications.Core.Runner":"0.5.0-*"
+        "Machine.Specifications.Core.Runner.CLI":"0.5.0-*"
+    },
+    "commands": {
+        "runtests": "Machine.Specifications.Core.Runner.CLI"
+        
     },
     "frameworks": {
         "dnxcore50": {

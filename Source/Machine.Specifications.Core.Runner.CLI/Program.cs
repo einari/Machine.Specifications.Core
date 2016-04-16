@@ -36,11 +36,7 @@ namespace Machine.Specifications.Runner.Core
                 var assembly = Assembly.Load(assemblyName);
                 Console.WriteLine($"  Loaded Assembly : {assembly.FullName}");
 
-                var listener = new Listener();
-                var options = RunOptions.Default;
-                var specificationRunner = new DefaultRunner(listener, options);
-
-                specificationRunner.RunAssembly(assembly);
+                AssemblyRunner.Run(assembly);
             }
             catch(Exception ex)
             {

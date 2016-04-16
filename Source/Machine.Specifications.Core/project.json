@@ -3,6 +3,11 @@
     "compilationOptions": {
         "emitEntryPoint": false
     },
+    "description": ".NET Core version of Machine Specifications",
+    "authors": [
+        "einari"
+    ],
+    "projectUrl": "https://github.com/einari/machine.specifications.core",
     "dependencies": {
         "NETStandard.Library": "1.5.0-rc3-23916",
         "System.Diagnostics.TraceSource": "4.0.0-rc3-23910",
