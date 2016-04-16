@@ -1,3 +1,5 @@
+[![mathdown HuBoard](https://img.shields.io/github/issues/einari/machine.specifications.core.svg?label=issues%20%28HuBoard%29)](https://huboard.com/einari/machine.specifications.core)
+
 # Machine.Specifications.Core
 .NET Core version of [Machine.Specifications](https://github.com/machine)
 
