@@ -5,13 +5,10 @@
     },
     "dependencies": {
         "NETStandard.App": "1.5.0-rc3-23916",
-        "Machine.Specifications.Core": "1.0.0-*",
-        "Machine.Specifications.Should.Core": "1.0.0-*",
-        "Runner":"1.0.0-*",
-        "xunit":"2.1.0-*",
-        "dotnet-test-xunit":"2.1.0-*"
+        "Machine.Specifications.Core": "0.5.0-*",
+        "Machine.Specifications.Should.Core": "0.5.0-*",
+        "Machine.Specifications.Core.Runner":"0.5.0-*"
     },
-    "testRunner": "dotnet-test-xunit",
     "frameworks": {
         "dnxcore50": {
             
