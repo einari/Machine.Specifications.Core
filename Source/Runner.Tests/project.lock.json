@@ -367,7 +367,7 @@
           "runtime.native.System": "4.0.0-rc3-23916"
         },
         "compile": {
-          "ref/netstandard1.3/System.IO.FileSystem.Watcher.dll": {}
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.Linq/4.1.0-rc3-23916": {
@@ -567,20 +567,6 @@
         },
         "compile": {
           "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
-        }
-      },
-      "System.Runtime.Loader/4.0.0-rc3-23916": {
-        "type": "package",
-        "dependencies": {
-          "System.IO": "4.1.0-rc3-23916",
-          "System.Reflection": "4.1.0-rc3-23916",
-          "System.Runtime": "4.1.0-rc3-23916"
-        },
-        "compile": {
-          "ref/netstandard1.5/System.Runtime.Loader.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
         }
       },
       "System.Runtime.Numerics/4.0.1-rc3-23916": {
@@ -896,8 +882,37 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "xunit/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "xunit.assert": "[2.1.0]",
+          "xunit.core": "[2.1.0]"
+        }
+      },
       "xunit.abstractions/2.0.0": {
         "type": "package"
+      },
+      "xunit.assert/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Globalization": "4.0.0",
+          "System.Linq": "4.0.0",
+          "System.ObjectModel": "4.0.0",
+          "System.Reflection": "4.0.0",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Text.RegularExpressions": "4.0.0",
+          "System.Threading.Tasks": "4.0.0"
+        },
+        "compile": {
+          "lib/dotnet/xunit.assert.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/xunit.assert.dll": {}
+        }
       },
       "xunit.core/2.1.0": {
         "type": "package",
@@ -954,7 +969,7 @@
           "lib/dotnet/xunit.execution.dotnet.dll": {}
         }
       },
-      "Machine.Specifications.Core/1.0.0": {
+      "Machine.Specifications.Core/0.5.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
@@ -963,24 +978,13 @@
           "System.Diagnostics.TraceSource": "4.0.0-rc3-23910"
         }
       },
-      "Machine.Specifications.Should.Core/1.0.0": {
+      "Machine.Specifications.Should.Core/0.5.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
-          "Machine.Specifications.Core": "1.0.0",
+          "Machine.Specifications.Core": "0.5.0",
           "NETStandard.Library": "1.5.0-rc3-23916",
           "System.Linq.Expressions": "4.0.11-rc3-23910"
-        }
-      },
-      "Runner/1.0.0": {
-        "type": "project",
-        "framework": "DNXCore,Version=v5.0",
-        "dependencies": {
-          "Machine.Specifications.Core": "1.0.0",
-          "Machine.Specifications.Should.Core": "1.0.0",
-          "NETStandard.App": "1.5.0-rc3-23916",
-          "System.IO.FileSystem.Watcher": "4.0.0-rc3-23916",
-          "System.Runtime.Loader": "4.0.0-rc3-23916"
         }
       }
     }
@@ -2981,29 +2985,6 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Runtime.Loader/4.0.0-rc3-23916": {
-      "sha512": "OVWeIPTtGqhwD1ws9Da7zE/6Zl5NssLsiCkDQjBRePhL48rmf4wAFmIMYW9pAjl9gKgXeq2gA8oa5cP3sHd+NA==",
-      "type": "package",
-      "files": [
-        "System.Runtime.Loader.4.0.0-rc3-23916.nupkg.sha512",
-        "System.Runtime.Loader.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/net462/_._",
-        "lib/netstandard1.5/System.Runtime.Loader.dll",
-        "ref/netstandard1.5/System.Runtime.Loader.dll",
-        "ref/netstandard1.5/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
-        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml"
-      ]
-    },
     "System.Runtime.Numerics/4.0.1-rc3-23916": {
       "sha512": "eyuNsOrV4Hh0dT4flk54S3i+cJjNpQ9FshgTBuq01HiI9kaMZw5oiEYAzACj1/5Xe/d3JU2MG+ZHmD4B/L7jLg==",
       "type": "package",
@@ -3832,6 +3813,14 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "xunit/2.1.0": {
+      "sha512": "u/7VQSOSXa7kSG4iK6Lcn7RqKZQ3hk7cnyMNVMpXHSP0RI5VQEtc44hvkG3LyWOVsx1dhUDD3rPAHAxyOUDQJw==",
+      "type": "package",
+      "files": [
+        "xunit.2.1.0.nupkg.sha512",
+        "xunit.nuspec"
+      ]
+    },
     "xunit.abstractions/2.0.0": {
       "sha512": "NAdxKQRzuLnCZ0g++x6i87/8rMBpQoRiRlRNLAqfODm2zJPbteHRoSER3DXfxnqrHXyBJT8rFaZ8uveBeQyaMA==",
       "type": "package",
@@ -3842,6 +3831,20 @@
         "lib/portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS/xunit.abstractions.xml",
         "xunit.abstractions.2.0.0.nupkg.sha512",
         "xunit.abstractions.nuspec"
+      ]
+    },
+    "xunit.assert/2.1.0": {
+      "sha512": "Hhhw+YaTe+BGhbr57dxVE+6VJk8BfThqFFii1XIsSZ4qx+SSCixprJC10JkiLRVSTfWyT8W/4nAf6NQgIrmBxA==",
+      "type": "package",
+      "files": [
+        "lib/dotnet/xunit.assert.dll",
+        "lib/dotnet/xunit.assert.pdb",
+        "lib/dotnet/xunit.assert.xml",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.assert.dll",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.assert.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/xunit.assert.xml",
+        "xunit.assert.2.1.0.nupkg.sha512",
+        "xunit.assert.nuspec"
       ]
     },
     "xunit.core/2.1.0": {
@@ -3921,17 +3924,13 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
-    "Machine.Specifications.Core/1.0.0": {
+    "Machine.Specifications.Core/0.5.0": {
       "type": "project",
       "path": "../Machine.Specifications.Core/project.json"
     },
-    "Machine.Specifications.Should.Core/1.0.0": {
+    "Machine.Specifications.Should.Core/0.5.0": {
       "type": "project",
       "path": "../Machine.Specifications.Should.Core/project.json"
-    },
-    "Runner/1.0.0": {
-      "type": "project",
-      "path": "../Runner/project.json"
     }
   },
   "projectFileDependencyGroups": {
@@ -3941,7 +3940,7 @@
       "NETStandard.App >= 1.5.0-rc3-23916",
       "Runner >= 1.0.0-*",
       "dotnet-test-xunit >= 2.1.0-*",
-      "xunit.core >= 2.1.0-*"
+      "xunit >= 2.1.0-*"
     ],
     "DNXCore,Version=v5.0": []
   }
