@@ -6,7 +6,7 @@
     "tasks": [
         {
             "taskName": "build",
-            "args": ["Source/Runner/"],
+            "args": ["Source/Machine.Specifications.Core.Runner.CLI/"],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
         }
