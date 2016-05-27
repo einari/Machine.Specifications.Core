@@ -12,12 +12,16 @@ namespace Machine.Specifications.Runner.Core
 
     public class when_doing_stuff : my_context
     {
+        static int[] some_integers = new[] {1,2,3};
+        
         Establish context = () => {};
 
         Because of = () => { };
 
         It should_really_do_things = () => true.ShouldBeTrue();
         It should_also_do_other_things = () => true.ShouldBeFalse();
+        
+        It should_only_contain_the_expected_integers = () => some_integers.ShouldContainOnly(new[] {1,2,3});
     }
 
     public class Program

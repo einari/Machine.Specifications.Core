@@ -1,18 +1,19 @@
 {
     "version": "0.5.0-*",
-    "compilationOptions": {
+    "buildOptions": {
         "emitEntryPoint": false
     },
     "dependencies": {
-        "NETStandard.Library": "1.5.0-rc3-23916",
-        "System.Linq.Expressions": "4.0.11-rc3-23910",
+        "Microsoft.NETCore.App": {
+            "type": "platform",
+            "version": "1.0.0-rc2-3002702"
+        },
+        "System.Linq.Expressions": "4.0.11-rc2-24027",
         "Machine.Specifications.Core": "0.5.0-*"
     },
     "frameworks": {
-        "dnxcore50": {
-            "dependencies": {
-                
-            }
+        "netcoreapp1.0": {
+            "imports": "dnxcore50"
         }
     }
 }

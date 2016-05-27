@@ -1,10 +1,13 @@
 {
     "version": "0.5.0-*",
-    "compilationOptions": {
+    "buildOptions": {
         "emitEntryPoint": true
     },
     "dependencies": {
-        "NETStandard.App": "1.5.0-rc3-23916",
+        "Microsoft.NETCore.App": {
+            "type": "platform",
+            "version": "1.0.0-rc2-3002702"
+        },
         "Machine.Specifications.Core": "0.5.0-*",
         "Machine.Specifications.Should.Core": "0.5.0-*",
         "Machine.Specifications.Core.Runner.CLI":"0.5.0-*"
@@ -14,8 +17,8 @@
         
     },
     "frameworks": {
-        "dnxcore50": {
-            
+        "netcoreapp1.0": {
+            "imports": "dnxcore50"
         }
     }
 }
