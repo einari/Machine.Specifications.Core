@@ -1,5 +1,5 @@
 {
-    "version": "0.5.0-*",
+    "version": "0.5.1-*",
     "buildOptions": {
         "emitEntryPoint": true
     },
@@ -8,9 +8,9 @@
             "type": "platform",
             "version": "1.0.0-rc2-3002702"
         },
-        "Machine.Specifications.Core": "0.5.0-*",
-        "Machine.Specifications.Should.Core": "0.5.0-*",
-        "Machine.Specifications.Core.Runner.CLI":"0.5.0-*"
+        "Machine.Specifications.Core": "0.5.1-*",
+        "Machine.Specifications.Should.Core": "0.5.1-*",
+        "Machine.Specifications.Core.Runner.CLI":"0.5.1-*"
     },
     "commands": {
         "runtests": "Machine.Specifications.Core.Runner.CLI"

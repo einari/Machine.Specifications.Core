@@ -1921,7 +1921,7 @@
           "lib/netstandard1.3/_._": {}
         }
       },
-      "Machine.Specifications.Core/0.5.0": {
+      "Machine.Specifications.Core/0.5.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.0",
         "dependencies": {
@@ -6488,7 +6488,7 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Machine.Specifications.Core/0.5.0": {
+    "Machine.Specifications.Core/0.5.1": {
       "type": "project",
       "path": "../Machine.Specifications.Core/project.json"
     },
@@ -6499,8 +6499,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Machine.Specifications.Core >= 0.5.0-*",
-      "Machine.Specifications.Should.Core >= 0.5.0-*",
+      "Machine.Specifications.Core >= 0.5.1-*",
+      "Machine.Specifications.Should.Core >= 0.5.1-*",
       "Microsoft.NETCore.App >= 1.0.0-rc2-3002702",
       "System.IO.FileSystem.Watcher >= 4.0.0-rc2-24027",
       "System.Runtime.Loader >= 4.0.0-rc2-24027"
