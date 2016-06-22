@@ -7,6 +7,6 @@ This is not a fork. The reasoning behind this is to not have all the legacy from
 
 The code has been copied and adapted from the original repository. 
 
-# How does it work
+# How does it work?
 
 For now, read the follow [blogpost](http://www.ingebrigtsen.info/2016/04/16/machine-specifications-net-core/).
