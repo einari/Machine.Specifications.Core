@@ -1,5 +1,6 @@
 {
     "version": "0.5.1-*",
+    "name": "dotnet-test-mspec",
     "buildOptions": {
         "emitEntryPoint": true
     },
@@ -12,11 +13,11 @@
             ],
             "dependencies": {
                 "Microsoft.NETCore.App": {
-                    "version": "1.0.0-rc2-3002702",
+                    "version": "1.0.0",
                     "type": "platform"
                 },
-                "System.IO.FileSystem.Watcher": "4.0.0-rc2-24027",
-                "System.Runtime.Loader": "4.0.0-rc2-24027"
+                "System.IO.FileSystem.Watcher": "4.0.0",
+                "System.Runtime.Loader": "4.0.0"
             }
         },
         "net451": {
@@ -26,7 +27,7 @@
         }
     },
     "dependencies": {
-        "Microsoft.Extensions.Testing.Abstractions": "1.0.0-preview1-002702",
+        "Microsoft.Extensions.Testing.Abstractions": "1.0.0-preview2-003121",
         "Machine.Specifications.Core": "0.5.1-*",
         "Machine.Specifications.Should.Core": "0.5.1-*",
         "xunit.runner.reporters": "2.1.0"

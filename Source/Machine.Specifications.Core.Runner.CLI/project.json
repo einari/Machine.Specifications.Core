@@ -12,11 +12,11 @@
             ],
             "dependencies": {
                 "Microsoft.NETCore.App": {
-                    "version": "1.0.0-rc2-3002702",
+                    "version": "1.0.0",
                     "type": "platform"
                 },
-                "System.IO.FileSystem.Watcher": "4.0.0-rc2-24027",
-                "System.Runtime.Loader": "4.0.0-rc2-24027"
+                "System.IO.FileSystem.Watcher": "4.0.0",
+                "System.Runtime.Loader": "4.0.0"
             }
         },
         "net451": {
