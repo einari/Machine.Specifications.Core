@@ -30,6 +30,8 @@ Source/Bifrost.QuickStart/App_Data
 *.cache
 TestResults/*
 NDependOut
+.vs/
+.vscode/
 
 # OS generated files #
 ######################
