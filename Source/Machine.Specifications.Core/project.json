@@ -9,7 +9,7 @@
         "Machine Project"
     ],
     "frameworks": {
-        "netstandard1.6": {
+        "netstandard1.5": {
             "dependencies": {
                 "NETStandard.Library":"1.6.0",
                 "System.Diagnostics.TraceSource": "4.*",
