@@ -1,0 +1,46 @@
+{
+    "version": "1-*",
+    "buildOptions": {
+        "emitEntryPoint": false,
+        "define": [
+            "DEBUG", "TRACE"
+        ]
+    },
+    "testRunner": "mspec",
+    "frameworks": {
+        "netcoreapp1.0": {
+        }
+    },
+    "dependencies": {
+        "NETStandard.Library": "1.6.0",
+        "Microsoft.NETCore.App": {
+            "version": "1.0.0",
+            "type": "platform"
+        },
+        "FluentAssertions": "4.*",
+        "Machine.Specifications.Core": {
+            "version": "*",
+            "target": "project"
+        },
+        "Machine.Specifications.Should.Core": {
+            "version": "*",
+            "target": "project"
+        },
+        "Example": {
+            "version": "*",
+            "target": "project"
+        },
+        "Example.Failing": {
+            "version": "*",
+            "target": "project"
+        },
+        "Example.Random": {
+            "version": "*",
+            "target": "project"
+        },
+        "dotnet-test-mspec": {
+            "version": "*",
+            "type": "build"
+        }
+    }
+}

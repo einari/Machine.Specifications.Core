@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
+using System.Runtime.Loader;
 
 using Machine.Specifications.Explorers;
 using Machine.Specifications.Utility;
@@ -14,7 +14,7 @@ namespace Machine.Specifications.Runner.Impl.Listener
 
     public override void OnAssemblyStart(AssemblyInfo assembly)
     {
-      var asm = Assembly.Load(new AssemblyName(assembly.Name));
+      var asm = AssemblyLoadContext.Default.LoadFromAssemblyPath(assembly.Location);
 
       var assemblyContexts = _explorer.FindAssemblyContextsIn(asm);
       assemblyContexts.Each(assemblyContext =>

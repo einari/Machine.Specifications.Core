@@ -18,7 +18,7 @@ namespace Machine.Specifications.ComparerStrategies
 
             if (comparable2 != null)
             {
-                if (!(comparable2.GetType().GetTypeInfo().IsInstanceOfType(y)))
+                if (!(comparable2.GetType().IsInstanceOfType(y)))
                 {
                     return new NoResult();
                 }

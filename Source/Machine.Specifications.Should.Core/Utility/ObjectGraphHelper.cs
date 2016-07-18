@@ -32,7 +32,7 @@ namespace Machine.Specifications.Utility
 
         static INode GetKeyValueNode(object obj)
         {
-            var properties = obj.GetType().GetTypeInfo().GetProperties()
+            var properties = obj.GetType().GetProperties()
               .Where(p => p.CanRead)
               .Select(p =>
               {
@@ -44,7 +44,7 @@ namespace Machine.Specifications.Utility
                   };
               });
 
-            var fields = obj.GetType().GetTypeInfo().GetFields()
+            var fields = obj.GetType().GetFields()
               .Select(f =>
               {
                   var field = f;
