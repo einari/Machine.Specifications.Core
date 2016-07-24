@@ -85,7 +85,25 @@ namespace Machine.Specifications.Runner.Impl
 
         void RunClass(MemberInfo member, Assembly assembly)
         {
-            var type = member.DeclaringType;
+            Type type;
+            if (member is TypeInfo)
+            {
+                type = ((TypeInfo)member).AsType();
+            }
+            else if (member is Type)
+            {
+                // This can be true on .NET (where Type is a subclass of MemberInfo),
+                // but not on .NET Core where it isn't
+                // Below is a hack to avoid conditional compilation for now
+                // and keep the method definition binary compatible with the
+                // original mspec.
+                type = (Type)((object)member);
+            }
+            else
+            {
+                type = null;
+            }
+
             var context = _explorer.FindContexts(type);
 
             if (context == null)

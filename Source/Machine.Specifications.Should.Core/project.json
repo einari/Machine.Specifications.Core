@@ -4,31 +4,17 @@
         "emitEntryPoint": false
     },
     "frameworks": {
-        "netcoreapp1.0": {
-            "imports": [
-                "dotnet",
-                "portable-dnxcore50+net45+win8+wp8+wpa81",
-                "portable-net45+win8"
-            ],
+        "netstandard1.5": {
             "dependencies": {
-                "Microsoft.NETCore.App": {
-                    "version": "1.0.0",
-                    "type": "platform"
+                "NETStandard.Library": "1.6.0",
+                "Machine.Specifications.Core": {
+                    "version": "*",
+                    "target": "project"
                 },
-                "System.Linq.Expressions": "4.1.0"
+                "System.Reflection": "4.*",
+                "System.Reflection.Extensions": "4.*",
+                "System.Reflection.TypeExtensions": "4.*"
             }
-        },
-        "net451": {
-            "frameworkAssemblies": {
-                "System.Threading.Tasks": ""
-            },
-            "dependencies": {
-                "System.Linq.Expressions": "4.0.0"
-            }
-            
         }
-    },
-    "dependencies": {
-        "Machine.Specifications.Core": "0.5.1-*"
     }
 }

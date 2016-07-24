@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text.RegularExpressions;
 using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 using Machine.Specifications.Annotations;
 using Machine.Specifications.Utility;
@@ -95,7 +97,6 @@ namespace Machine.Specifications
             return expected;
         }
 
-
         public static void ShouldBeOfExactType(this object actual, Type expected)
         {
             if (actual == null)
@@ -141,7 +142,7 @@ namespace Machine.Specifications
                 throw new SpecificationException(string.Format("Should be assignable to type {0} but is [null]", expected));
             }
 
-            if (!expected.GetTypeInfo().IsAssignableFrom(actual.GetType()))
+            if (!expected.IsAssignableFrom(actual.GetType()))
             {
                 throw new SpecificationException(string.Format("Should be assignable to type {0} but is not. Actual type is {1}",
                     expected,
@@ -156,7 +157,7 @@ namespace Machine.Specifications
                 throw new SpecificationException(string.Format("Should not be assignable to type {0} but is [null]", expected));
             }
 
-            if (expected.GetTypeInfo().IsAssignableFrom(actual.GetType()))
+            if (expected.IsAssignableFrom(actual.GetType()))
             {
                 throw new SpecificationException(string.Format("Should not be assignable to type {0} but is. Actual type is {1}",
                     expected,
@@ -228,7 +229,7 @@ the following items did not meet the condition: {1}",
             if (noContain.Any())
             {
                 throw new SpecificationException(string.Format(
-                                                               @"Should contain: {0} 
+                                                               @"Should contain: {0}
 entire list: {1}
 does not contain: {2}",
                     items.EachToUsefulString(),
@@ -280,7 +281,7 @@ entire list: {1}",
             if (contains.Any())
             {
                 throw new SpecificationException(string.Format(
-                                                               @"Should not contain: {0} 
+                                                               @"Should not contain: {0}
 entire list: {1}
 does contain: {2}",
                     items.EachToUsefulString(),
@@ -512,7 +513,7 @@ does contain: {2}",
             if (expected == null) throw new ArgumentNullException("expected");
             if (actual == null) throw NewException("Should be equal ignoring case to {0} but is [null]", expected);
 
-            if (!actual.Equals(expected, StringComparison.OrdinalIgnoreCase))
+            if (CultureInfo.InvariantCulture.CompareInfo.Compare(actual, expected, CompareOptions.IgnoreCase) != 0)
             {
                 throw NewException("Should be equal ignoring case to {0} but is {1}", expected, actual);
             }
@@ -585,7 +586,7 @@ does contain: {2}",
 
             if (noContain.Any() || source.Any())
             {
-                var message = string.Format(@"Should contain only: {0} 
+                var message = string.Format(@"Should contain only: {0}
 entire list: {1}",
                     items.EachToUsefulString(),
                     list.EachToUsefulString());
@@ -607,14 +608,14 @@ entire list: {1}",
             var exception = Catch.Exception(method);
 
             ShouldNotBeNull(exception);
-            ShouldBeOfExactType(exception, exceptionType);
+            ShouldBeAssignableTo(exception, exceptionType);
             return exception;
         }
 
         public static void ShouldBeLike(this object obj, object expected)
         {
 
-            var exceptions = ShouldBeLikeInternal(obj, expected, "", new List<object>()).ToArray();
+            var exceptions = ShouldBeLikeInternal(obj, expected, "", new HashSet<ReferentialEqualityTuple>()).ToArray();
 
             if (exceptions.Any())
             {
@@ -622,15 +623,15 @@ entire list: {1}",
             }
         }
 
-        static IEnumerable<SpecificationException> ShouldBeLikeInternal(object obj, object expected, string nodeName, List<object> visited)
+        static IEnumerable<SpecificationException> ShouldBeLikeInternal(object obj, object expected, string nodeName, HashSet<ReferentialEqualityTuple> visited)
         {
-            if (IsReferenceTypeNotNullOrString(obj) && IsReferenceTypeNotNullOrString(expected))
-            {
-                if (visited.Any(o => ReferenceEquals(o, expected)))
-                    return Enumerable.Empty<SpecificationException>();
-
-                visited.Add(expected);
-            }
+            // Stop at already checked <actual,expected>-pairs to prevent infinite loops (cycles in object graphs). Additionally
+            // this also avoids re-equality-evaluation for already compared pairs.
+            var objExpectedTuple = new ReferentialEqualityTuple(obj, expected);
+            if (visited.Contains(objExpectedTuple))
+                return Enumerable.Empty<SpecificationException>();
+            else
+                visited.Add(objExpectedTuple);
 
             ObjectGraphHelper.INode expectedNode = null;
             var nodeType = typeof(ObjectGraphHelper.LiteralNode);
@@ -716,9 +717,31 @@ entire list: {1}",
             }
         }
 
-        private static bool IsReferenceTypeNotNullOrString(object obj)
+        // DTO for ShouldBeLikeInternal() loop detection's visited cache
+        private class ReferentialEqualityTuple
         {
-            return obj != null && obj.GetType().GetTypeInfo().IsClass && !(obj is string);
+            private readonly object _obj;
+            private readonly object _expected;
+
+            public ReferentialEqualityTuple(object obj, object expected)
+            {
+                _obj = obj;
+                _expected = expected;
+            }
+
+            public override int GetHashCode()
+            {
+                return RuntimeHelpers.GetHashCode (_obj) * RuntimeHelpers.GetHashCode (_expected);
+            }
+
+            public override bool Equals(object other)
+            {
+                var otherSimpleTuple = other as ReferentialEqualityTuple;
+                if (otherSimpleTuple == null)
+                  return false;
+
+                return ReferenceEquals(_obj, otherSimpleTuple._obj) && ReferenceEquals(_expected, otherSimpleTuple._expected);
+            }
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Machine.Specifications.ComparerStrategies
 {
@@ -8,8 +7,9 @@ namespace Machine.Specifications.ComparerStrategies
         public ComparisionResult Compare(T x, T y)
         {
             var type = typeof(T);
+            var typeInfo = type.GetTypeInfo();
 
-            if (!type.GetTypeInfo().IsValueType || (type.GetTypeInfo().IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>)))
+            if (!typeInfo.IsValueType || (type.GetTypeInfo().IsGenericType && type.IsNullable()))
             {
                 if (x.IsEqualToDefault())
                 {

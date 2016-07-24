@@ -1,5 +1,6 @@
 bin
 obj
+project.lock.json
 *.suo
 *.ldf
 *.LDF
@@ -29,6 +30,8 @@ Source/Bifrost.QuickStart/App_Data
 *.cache
 TestResults/*
 NDependOut
+.vs/
+.vscode/
 
 # OS generated files #
 ######################

@@ -5,30 +5,20 @@
     },
     "description": ".NET Core version of Machine Specifications",
     "authors": [
-        "einari"
+        "einari",
+        "Machine Project"
     ],
     "frameworks": {
-        "netcoreapp1.0": {
-            "imports": [
-                "dotnet",
-                "portable-dnxcore50+net45+win8+wp8+wpa81",
-                "portable-net45+win8"
-            ],
+        "netstandard1.5": {
             "dependencies": {
-                "Microsoft.NETCore.App": {
-                    "version": "1.0.0",
-                    "type": "platform"
-                },
-                "System.Diagnostics.TraceSource": "4.0.0",
-                "System.Diagnostics.TextWriterTraceListener": "4.0.0"
-            }
-        },
-        "net451": {
-            "frameworkAssemblies": {
-                "System.Threading.Tasks": ""
+                "NETStandard.Library":"1.6.0",
+                "System.Diagnostics.TraceSource": "4.*",
+                "System.Diagnostics.TextWriterTraceListener": "4.*",
+                "System.Reflection": "4.*",
+                "System.Reflection.Extensions": "4.*",
+                "System.Reflection.TypeExtensions": "4.*",
+                "System.Runtime.Loader": "4.*"
             }
         }
-    },
-    "dependencies": {
     }
 }
